@@ -1,0 +1,384 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+
+	font-size: 100%;
+}
+body{
+	background-color: #ffffff;
+}
+header{
+	background-color: #05202f;
+}
+nav{
+	background: #051d2b;
+}
+.nav:disable{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.nav li{
+	position: relative;
+	padding: 0 20px;
+	height: 100%;
+	display: flex;
+}
+.nav a{
+	z-index: 1;
+	color: white;
+	text-decoration: none;
+	font-family: 'Teko', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	padding: 10px 5px;
+}
+.nav li:before{
+	content: "";
+	position: absolute;
+	height: 33.33%;
+	width: 0;
+	background-color: #0D7CFF;
+	right: 0;
+	z-index: 0;
+	top:33.33%;
+	transition: all 0.5s;
+}
+.nav li:after{
+	content: "";
+	position: absolute;
+	height: 33.33%;
+	width: 0;
+	background-color: #0D7CFF;
+	left: 0;
+	z-index: 0;
+	bottom: 0;
+	transition: all 0.5s;
+}
+.nav a:before{
+	position: absolute;
+	content: "";
+	height: 33.33%;
+	width: 0;
+	background-color: #0D7CFF;
+	bottom: 66.66%;
+	left: 0;
+	transition: all 0.5s;
+}
+.nav li:hover:before,
+.nav li:hover:after,
+.nav li:hover a:before{
+	width: 100%;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+div.Yo {																
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    margin: 1%;
+    display: inline-block;
+}
+#nombre{
+	display: inline-block;
+	margin: 0 auto;
+	position: relative;
+	width: 50%;
+	bottom: 10vh;
+	left: 1.5vh;
+	
+}
+#texto-nombre{
+	color: #ffffff;
+	font-size: 2.5rem;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+}
+main{
+	padding: 5%;
+}
+div h1{
+	font-family: 'Teko', sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+}
+div h3{
+
+	text-align: center;
+}
+.index{
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.seccion{
+	margin-bottom: 15px;
+	background-color: #e5e5e5;
+	padding: 5px;
+}
+.seccion h2{
+	font-family: 'Allan', cursive;
+	text-align: center;
+}
+.tarjeta{
+
+	margin: 0 auto;
+	display: flex;
+	width: 80%;
+	height: 200px;
+	margin-bottom: 15px;
+	background: rgb(255,255,255);
+	background: linear-gradient(45deg, rgba(255,255,255,1), rgba(191,191,191,1));
+	 background-size: 400% 400%;
+	position: relative;
+	animation: change 5s ease-in-out infinite;
+		
+	}
+.texto-principal{
+	text-decoration: none;
+	color: black;
+}
+
+.Titulo1{
+	font-family: 'Crimson Text', serif;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+.Titulo2{
+	font-family: 'Crimson Text', serif;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.Titulo3{
+	font-family: 'Crimson Text', serif;
+	margin: 0 auto;
+	text-align: center;
+	height: 20%;
+	width: 100%;
+}
+#img-index{
+	bottom: 0;
+	height: 120px;
+	position: absolute;
+}
+#iframe{
+
+}
+ /*Trabajo*/
+ li{
+ 	margin: 25px;
+ }
+ .trabajo li{
+ 	list-style: square inside;
+ }
+ .trabajo-li{
+ 	display: inline-block;
+ 	margin: 0 auto;
+ 	position: relative;
+ 	text-align: center;
+ }
+ .trabajo{
+ 	padding-top: 40px;
+ 	text-align: center;
+ 	background: #eeeeee;
+ 	padding-bottom: 40px;
+ 	margin-bottom: 40px;
+ }
+.imagen{
+	margin: 0 auto;
+  	width: 100%;
+	height: 40%;
+	display: flex;
+	margin-bottom: 1rem;
+	
+}
+ .imagen img{
+ 	width: 100%;
+ }
+ section ul{
+ 	text-align: center;
+ 	display: inline-block;
+ }
+
+ .imagen-secundaria{
+	margin: 0 auto;
+  	width: 70%;
+	height: 40%;
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+ .imagen-secundaria img{
+ 	width: 100%;
+ }
+
+
+
+ .texto{
+ 	padding:30px;
+ 	font-family: 'Quicksand', sans-serif;
+ }
+ .texto-largo{
+ 	text-align: left;
+ 	font-family: 'Quicksand', sans-serif;
+ }
+
+/*Fin trabajo*/
+.contacto-{
+	text-align: center;
+}
+.container{
+  text-align: center;
+  margin-top: 20px;
+}
+.button-contacto{
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btutton-contacto{
+  color: #3498db;
+}
+.button-contacto:hover{
+  color: #fff;
+}
+.button-contacto::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+.button-contacto::before{
+  top: 0;
+  border-radius: 0 0 50% 50utton-contacto
+}
+.button-contacto:hover::before{
+  height: 180%;
+}
+
+iframe {
+    position:absolute;
+    height: 100%;
+    width:  100%;
+    top:  0;
+    left: 0;
+}
+
+
+footer{
+	background: rgb(54,78,76);
+	background: linear-gradient(45deg, rgba(54,78,76,1), rgba(0,0,0,1));
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+
+form{
+	margin: 20px 10vw;
+	padding: 30px 50px;
+	text-align: left;
+	background-color: rgba(162,205,183,.3);
+}
+
+label{
+	display: block;
+	font-size: 1.3rem;
+	padding-bottom: 10px;
+}
+
+input{
+	margin-bottom: 20px;
+	width: 60%;
+	height: 40px;
+	font-size: 1rem;
+	padding: 0 5px;
+	color: darkblue;
+}
+
+textarea{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+}
+
+footer .redes-sociales .twitter {background: #1da1f2;}
+footer .redes-sociales .facebook {background: #3b5998;}
+footer .redes-sociales .instagram {background: #c13584;}
+footer .redes-sociales .youtube {background: #ff0000;}
+
+footer .redes-sociales a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}

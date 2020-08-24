@@ -1,0 +1,192 @@
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+@media (min-width: 550px) { 
+
+
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+	
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+		
+	#nombre{
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	bottom: 70px;
+	left: 150px;
+	
+	}
+	#texto-nombre{
+	color: #ffffff;
+	font-size: 2.5rem;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	text-align: center;
+}
+.tarjeta{
+
+	margin-left: 15px;
+	display: inline-block;
+	width: 30%;
+	height: 200px;
+	margin-bottom: 15px;
+	background: rgb(255,255,255);
+	background: linear-gradient(45deg, rgba(255,255,255,1), rgba(191,191,191,1));
+	 background-size: 400% 400%;
+	position: relative;
+	animation: change 5s ease-in-out infinite;
+		
+	}
+	#iframe{
+		margin: 0 auto;
+		display: flex;
+		width: 75%;
+		height: 300px;
+	}
+	 .trabajo{
+ 	padding-top: 40px;
+ 	text-align: center;
+ 	background: #eeeeee;
+ 	padding-bottom: 40px;
+ 	margin-bottom: 40px;
+ 	padding-left: 10%;
+ 	padding-right: 10%;
+ }
+ .seccion{
+ 	padding-bottom: 30px;
+ 	padding-top: 30px;
+ }
+	
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+		.nav{
+		list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+	#nombre{
+	display: inline-block;
+	position: relative;
+	width: 15%;
+	bottom: 0;
+	left: 0;
+
+	
+	}
+	#texto-nombre{
+	color: #ffffff;
+	font-size: 2rem;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	text-align: center;
+}
+.tarjeta{
+
+	margin-left: 7px;
+	display: inline-block;
+	width: 32%;
+	height: 200px;
+	margin-bottom: 15px;
+	background: rgb(255,255,255);
+	background: linear-gradient(45deg, rgba(255,255,255,1), rgba(191,191,191,1));
+	 background-size: 400% 400%;
+	position: relative;
+	animation: change 5s ease-in-out infinite;
+		
+	}
+	#iframe{
+		margin: 0 auto;
+		display: flex;
+		width: 50%;
+		height: 300px;
+	}
+	 .trabajo{
+ 	padding-top: 40px;
+ 	text-align: center;
+ 	background: #eeeeee;
+ 	padding-bottom: 40px;
+ 	margin-bottom: 40px;
+ 	padding-left: 15%;
+ 	padding-right: 15%;
+ }
+ .seccion{
+ 	padding-bottom: 30px;
+ 	padding-top: 30px;
+ }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	.nav{
+		list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+	#nombre{
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	bottom: 0;
+
+	
+	}
+	#texto-nombre{
+	color: #ffffff;
+	font-size: 2.5rem;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	text-align: center;
+}
+.tarjeta{
+
+	margin-left: 40px;
+	display: inline-block;
+	width: 30%;
+	height: 200px;
+	margin-bottom: 15px;
+	background: rgb(255,255,255);
+	background: linear-gradient(45deg, rgba(255,255,255,1), rgba(191,191,191,1));
+	 background-size: 400% 400%;
+	position: relative;
+	animation: change 5s ease-in-out infinite;
+		
+	}
+	#iframe{
+		margin: 0 auto;
+		display: flex;
+		width: 40%;
+		height: 300px;
+	}
+	 .trabajo{
+ 	padding-top: 40px;
+ 	text-align: center;
+ 	background: #eeeeee;
+ 	padding-bottom: 40px;
+ 	margin-bottom: 40px;
+ 	padding-left: 20%;
+ 	padding-right: 20%;
+ }
+ .seccion{
+ 	padding-bottom: 30px;
+ 	padding-top: 30px;
+ }
+}
